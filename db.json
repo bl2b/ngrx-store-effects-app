@@ -64,10 +64,6 @@
         {
           "id": 7,
           "name": "olive"
-        },
-        {
-          "id": 1,
-          "name": "anchovy"
         }
       ],
       "id": 1
@@ -135,24 +131,6 @@
         }
       ],
       "id": 3
-    },
-    {
-      "name": "test",
-      "toppings": [
-        {
-          "id": 1,
-          "name": "anchovy"
-        },
-        {
-          "id": 5,
-          "name": "mozzarella"
-        },
-        {
-          "id": 9,
-          "name": "pepper"
-        }
-      ],
-      "id": 4
     }
   ]
 }

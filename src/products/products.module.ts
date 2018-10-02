@@ -12,6 +12,10 @@ import * as fromContainers from './containers';
 
 // services
 import * as fromServices from './services';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { reducers, effects } from './store';
+
 
 // routes
 export const ROUTES: Routes = [
@@ -35,6 +39,8 @@ export const ROUTES: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forChild(ROUTES),
+    StoreModule.forFeature('products', reducers), // allow us to essentially lazyload everything to do with our store and it will bind itself to the root store object
+    EffectsModule.forFeature(effects)
   ],
   providers: [...fromServices.services],
   declarations: [...fromContainers.containers, ...fromComponents.components],
